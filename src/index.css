@@ -8,54 +8,59 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 222 43% 14%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 222 43% 14%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 262 100% 75%;
+    --primary: 174 62% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 174 62% 65%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 285 85% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 12 76% 61%;
+    --accent-foreground: 0 0% 100%;
 
     --success: 142 76% 36%;
-    --success-foreground: 210 40% 98%;
+    --success-foreground: 0 0% 100%;
 
     --warning: 38 92% 50%;
     --warning-foreground: 222 47% 11%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 262 83% 58%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 174 62% 47%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(285 85% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(222 43% 14%), hsl(217 33% 17%));
-    --gradient-glow: linear-gradient(135deg, hsl(262 100% 75% / 0.3), hsl(285 100% 75% / 0.2));
+    --premium: 43 74% 66%;
+    --premium-foreground: 222 47% 11%;
+
+    /* Light mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 62% 47%), hsl(12 76% 61%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210 40% 96%), hsl(214 32% 91%));
+    --gradient-hero: linear-gradient(135deg, hsl(174 62% 47% / 0.1), hsl(12 76% 61% / 0.1));
+    --gradient-premium: linear-gradient(135deg, hsl(43 74% 66%), hsl(174 62% 47%));
     
-    /* Shadows */
-    --shadow-magical: 0 10px 40px hsl(262 83% 58% / 0.3);
-    --shadow-glow: 0 0 40px hsl(262 100% 75% / 0.4);
-    --shadow-card: 0 8px 30px hsl(222 47% 11% / 0.3);
+    /* Light mode shadows */
+    --shadow-elegant: 0 10px 25px hsl(174 62% 47% / 0.15);
+    --shadow-soft: 0 4px 20px hsl(222 47% 11% / 0.08);
+    --shadow-premium: 0 20px 40px hsl(43 74% 66% / 0.2);
 
-    /* Animations */
-    --transition-magical: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Professional animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
@@ -86,9 +91,9 @@ All colors MUST be HSL.
     --popover: 222 43% 14%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 262 100% 75%;
+    --primary: 174 62% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 174 62% 65%;
 
     --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
@@ -96,21 +101,35 @@ All colors MUST be HSL.
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 285 85% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 12 76% 61%;
+    --accent-foreground: 0 0% 100%;
 
     --success: 142 76% 36%;
-    --success-foreground: 210 40% 98%;
+    --success-foreground: 0 0% 100%;
 
     --warning: 38 92% 50%;
     --warning-foreground: 222 47% 11%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 262 83% 58%;
+    --ring: 174 62% 47%;
+
+    --premium: 43 74% 66%;
+    --premium-foreground: 222 47% 11%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 62% 47%), hsl(12 76% 61%));
+    --gradient-secondary: linear-gradient(135deg, hsl(222 43% 14%), hsl(217 33% 17%));
+    --gradient-hero: linear-gradient(135deg, hsl(174 62% 47% / 0.2), hsl(12 76% 61% / 0.1));
+    --gradient-premium: linear-gradient(135deg, hsl(43 74% 66%), hsl(174 62% 47%));
+    
+    /* Dark mode shadows */
+    --shadow-elegant: 0 10px 25px hsl(174 62% 47% / 0.3);
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.2);
+    --shadow-premium: 0 20px 40px hsl(43 74% 66% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -142,31 +161,71 @@ All colors MUST be HSL.
     -webkit-text-fill-color: transparent;
   }
 
-  .magical-glow {
-    box-shadow: var(--shadow-magical);
+  .gradient-hero-bg {
+    background: var(--gradient-hero);
   }
 
-  .floating {
-    animation: float 6s ease-in-out infinite;
+  .elegant-shadow {
+    box-shadow: var(--shadow-elegant);
   }
 
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+  .soft-shadow {
+    box-shadow: var(--shadow-soft);
   }
 
-  .slide-in {
-    animation: slideIn 0.6s ease-out;
+  .premium-shadow {
+    box-shadow: var(--shadow-premium);
   }
 
-  @keyframes slideIn {
+  .professional-card {
+    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-soft hover:-translate-y-1;
+  }
+
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+
+  .bounce-transition {
+    transition: var(--transition-bounce);
+  }
+
+  .spring-transition {
+    transition: var(--transition-spring);
+  }
+
+  /* Professional animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(40px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
+
+  .scale-in {
+    animation: scaleIn 0.4s ease-out;
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .stagger-delay-1 { animation-delay: 0.1s; }
+  .stagger-delay-2 { animation-delay: 0.2s; }
+  .stagger-delay-3 { animation-delay: 0.3s; }
+  .stagger-delay-4 { animation-delay: 0.4s; }
 }

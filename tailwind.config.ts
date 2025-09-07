@@ -48,6 +48,10 @@ export default {
           DEFAULT: "hsl(var(--warning))",
           foreground: "hsl(var(--warning-foreground))",
         },
+        premium: {
+          DEFAULT: "hsl(var(--premium))",
+          foreground: "hsl(var(--premium-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -75,16 +79,18 @@ export default {
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-secondary': 'var(--gradient-secondary)',
-        'gradient-glow': 'var(--gradient-glow)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-premium': 'var(--gradient-premium)',
       },
       boxShadow: {
-        'magical': 'var(--shadow-magical)',
-        'glow': 'var(--shadow-glow)',
-        'card': 'var(--shadow-card)',
+        'elegant': 'var(--shadow-elegant)',
+        'soft': 'var(--shadow-soft)',
+        'premium': 'var(--shadow-premium)',
       },
       transitionTimingFunction: {
-        'magical': 'var(--transition-magical)',
+        'smooth': 'var(--transition-smooth)',
         'bounce': 'var(--transition-bounce)',
+        'spring': 'var(--transition-spring)',
       },
       keyframes: {
         "accordion-down": {
