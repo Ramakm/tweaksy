@@ -3,6 +3,7 @@ import { Sparkles, Zap, Palette, Users, ArrowRight, Wand2, Image, Layers } from 
 import beforeAfter1 from "@/assets/before-after-1.jpg";
 import beforeAfter2 from "@/assets/before-after-2.jpg";
 import beforeAfter3 from "@/assets/before-after-3.jpg";
+import ImageCompare from "@/components/ui/ImageCompare";
 
 const FeaturesSection = () => {
   const features = [
@@ -144,10 +145,19 @@ const FeaturesSection = () => {
               <div className={`relative fade-in-up stagger-delay-2 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-primary rounded-2xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity"></div>
-                  <img 
-                    src={showcase.image} 
+                  <ImageCompare
+                    src={showcase.image}
                     alt={`${showcase.title} - ${showcase.description}`}
-                    className="relative rounded-xl shadow-elegant hover:shadow-premium transition-all duration-500 w-full h-auto transform group-hover:scale-105"
+                    className="relative hover:shadow-premium transition-all duration-500 w-full h-auto transform group-hover:scale-105"
+                    beforeFilterClassName={
+                      index === 0
+                        ? "grayscale contrast-75 brightness-95"
+                        : index === 1
+                        ? "saturate-50 brightness-90"
+                        : "sepia contrast-90"
+                    }
+                    handleBgClassName={index === 0 ? "bg-primary/90" : index === 1 ? "bg-success/90" : "bg-accent/90"}
+                    start={index === 0 ? 52 : index === 1 ? 50 : 56}
                   />
                 </div>
               </div>
